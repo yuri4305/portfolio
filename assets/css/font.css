@@ -1,0 +1,15 @@
+/* 꾸밈용서체*/
+@font-face {
+  font-family: "Jalnan2", sans-serif;
+  src: url(../fonts/Jalnan2/);
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 본물서체*/
+@font-face {
+  font-family: "Creato Display", sans-serif;
+  src: url(../fonts/creato_display/);
+  font-weight: normal;
+  font-style: normal;
+}

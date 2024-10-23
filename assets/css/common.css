@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+:root {
+  --gray900: #1a1a1a;
+  --gray800: #333333;
+  --gray700: #4d4d4d;
+  --gray600: #555555;
+  --gray500: #2d2d2d;
+  --gray400: #999999;
+  --gray300: #b3b3b3;
+  --gray200: #cccccc;
+  --gray100: #e6e6e6;
+  --gray50: #f2f2f2;
+
+  --point500: #0ff0fc;
+}
+
+/* header*/
+.nav-wrap {
+  width: 100vw;
+  background-color: #2e2e2e;
+  position: fixed;
+}
+
+.nav {
+  width: 140rem;
+  height: 10rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .menu {
+  display: flex;
+}
+
+.nav .menu li {
+  padding: 0 3rem 0;
+}
+
+.nav .logo {
+  font-family: "yg-jalnan", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.nav .menu li {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
