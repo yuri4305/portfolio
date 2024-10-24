@@ -123,28 +123,42 @@
 
 /* portfolio 슬라이더*/
 .slider {
+  /* background-color: tomato; */
+  white-space: nowrap;
   width: 100%; /* 슬라이더가 화면 전체를 차지하게 설정 */
   height: 23.8rem;
   margin-top: 11rem;
   overflow: hidden; /* 슬라이드가 벗어나지 않도록 숨기기 */
 }
 
-.slides {
+.slider .slides {
   display: flex;
+  animation: moveText 30s linear infinite;
 }
 
-.slide {
-  margin-right: 3rem;
+.slider .slides .slide {
+  font-family: "Creato Display", sans-serif;
+  margin-right: 4rem;
   font-size: 19rem;
+}
+
+.slider .slides .stroke {
+  color: #000000;
+  -webkit-text-stroke: 1px #ffffff;
+}
+.slider .slides .pointcolor {
   color: #0ff0fc;
 }
 
-.stroke {
-  color: #000000;
-  -webkit-text-stroke: 1px #0ff0fc;
-}
-
 /* 슬라이드 애니메이션 */
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 /*portfolio content*/
 .portfolio-con .conwrap {
@@ -226,4 +240,68 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/*contact me*/
+.contact {
+  width: 100%;
+
+  background-color: #ffffff;
+  margin-top: 16rem;
+}
+
+.contact .contact-wrap {
+  padding-top: 5rem;
+}
+
+.contact .contact-wrap .cont-title {
+  font-family: "Creato Display", sans-serif;
+  font-size: 10rem;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.contact .contact-wrap p {
+  font-family: "Creato Display", sans-serif;
+  font-size: 2.5rem;
+  color: #000000;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 7rem;
+}
+
+.contact .contact-wrap .contact-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.contact .contact-wrap .contact-icon div {
+  width: 9rem;
+  height: 9rem;
+  background-color: aqua;
+  border-radius: 50%;
+  margin-bottom: 13.6rem;
+}
+
+.contact .contact-wrap .contact-icon .kakao {
+  margin-right: 4rem;
+}
+
+.contact .contact-wrap .contact-icon div img {
+  width: 100%;
+  height: 100%;
+}
+
+.contact .contact-wrap .small {
+  font-family: "Creato Display", sans-serif;
+  font-size: 2rem;
+  color: #000000;
+  text-align: center;
+}
+
+.contact .contact-wrap .small i {
+  color: rgb(253, 60, 60);
 }
